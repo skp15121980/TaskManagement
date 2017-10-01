@@ -1,0 +1,28 @@
+<config xmlns='http://www.ehcache.org/v3'
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:jsr107="http://www.ehcache.org/v3/jsr107"
+		xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd
+							http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
+	
+	 <service>
+        <jsr107:defaults enable-management="true" enable-statistics="true"/>
+    </service>
+     <persistence directory="cachingPersistence"></persistence>
+     <cache alias="taskCache" uses-template="heap-cache"/>
+	<!-- <cache alias="taskCache">
+		<expiry>
+			<ttl unit="seconds">600</ttl>
+		</expiry>
+		<heap unit="entries">200</heap>
+		<jsr107:mbeans enable-statistics="true"/>
+	</cache> -->
+	
+	   <cache-template name="heap-cache">
+	     <resources>
+            <heap unit="entries">90</heap>
+            <offheap unit="MB">90</offheap>
+            <disk persistent="true" unit="MB">100</disk>
+        </resources>
+    </cache-template>
+
+</config>

@@ -1,0 +1,26 @@
+server:
+  port: 8082
+spring:
+  resources:
+    chain:
+      enabled: true
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/xe
+    username: LTM
+    password: LTM
+    hikari:
+      pool-name: SpringBootHikariCP
+      maximum-pool-size: 5
+      minimum-idle: 3
+      max-lifetime: 200000
+      connection-timeout: 30000
+      idle-timeout: 30000
+  cache:
+    jcache:
+      config: classpath:ehcache3.xml
+
+server.tomcat.max-threads: 4
+logging:
+  pattern:
+    level: INFO
+    

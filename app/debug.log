@@ -1,0 +1,108 @@
+2017-10-01 16:17:50.301 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStarting - Starting LoanTaskManagerApplication on DESKTOP-TT2K11L with PID 2900 (D:\LoanTaskManager\LoanTaskManager\target\classes started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
+2017-10-01 16:17:50.301 [restartedMain] DEBUG
+				c.ltm.rnd.LoanTaskManagerApplication.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-01 16:17:50.301 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-10-01 16:18:57.179 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStarting - Starting LoanTaskManagerApplication on DESKTOP-TT2K11L with PID 8460 (D:\LoanTaskManager\LoanTaskManager\target\classes started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
+2017-10-01 16:18:57.179 [restartedMain] DEBUG
+				c.ltm.rnd.LoanTaskManagerApplication.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-01 16:18:57.179 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-10-01 16:19:00.787 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStarted - Started LoanTaskManagerApplication in 3.779 seconds (JVM running for 4.329)
+2017-10-01 16:19:00.787 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.main - main
+2017-10-01 16:19:05.126 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:19:05.126 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:19:07.622 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:20:59.296 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:20:59.296 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:20:59.303 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:47.392 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:47.393 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:47.397 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:47.710 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:47.710 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:47.714 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:47.961 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:47.962 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:47.965 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:48.195 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:48.195 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:48.199 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:48.426 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:48.426 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:48.429 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:48.647 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:48.648 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:48.651 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:48.850 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:48.851 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:48.855 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:49.054 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:49.054 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:49.058 [http-nio-8082-exec-3] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:49.254 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:49.254 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:49.257 [http-nio-8082-exec-4] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:49.455 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:49.455 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:49.459 [http-nio-8082-exec-2] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 16:21:49.703 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-01 16:21:49.703 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 16:21:49.707 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
+2017-10-01 17:04:33.182 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 10812 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
+2017-10-01 17:04:33.182 [main] DEBUG
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-01 17:04:33.185 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-10-01 17:04:42.685 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 10.525 seconds (JVM running for 12.501)
+2017-10-01 17:04:43.055 [main] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
+2017-10-01 17:04:43.056 [main] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
+2017-10-01 17:04:44.530 [main] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
