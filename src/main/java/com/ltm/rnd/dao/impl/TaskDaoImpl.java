@@ -5,12 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Types;
 import java.util.Calendar;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
 import org.perf4j.StopWatch;
 import org.perf4j.log4j.Log4JStopWatch;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -64,6 +66,12 @@ public class TaskDaoImpl implements TaskDao {
         taskDto.setTaskId(UUID.fromString(taskId.get("TASK_ID").toString()));
         stopWatch.stop();
         return taskDto;
+	}
+	@Override
+	public List<String> getTaskById(String userId) {
+		String sql = "SELECT TASK_TYPE FROM Ltm_Task where CREATED_USERID = ?";
+		List<String> taskDto  = jdbcTemplate.queryForList(sql, new Object[]{ userId}, String.class);
+		return taskDto;
 	}
 }
 

@@ -71,7 +71,7 @@
   
 <logger name="org.perf4j.TimingLogger" level="info" additivity="false">
 <appender-ref ref="coalescingStatistics" />
-    <appender-ref ref="perf4jFileAppender"/>
+   
 </logger>
 <logger name="com.ltm.rnd" additivity="false" level="debug">
 		<appender-ref ref="FILE-AUDIT" />

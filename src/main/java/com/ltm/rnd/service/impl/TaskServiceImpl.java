@@ -1,5 +1,7 @@
 package com.ltm.rnd.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
@@ -23,6 +25,12 @@ public class TaskServiceImpl implements TaskService {
 	@Override
 	public TaskDto create(TaskDto taskDto){
 		return taskDao.create(taskDto);
+	}
+	@Cacheable
+	@Override
+	public List<String> getByUserId(String userId) {
+		System.out.println(userId);
+		return taskDao.getTaskById(userId);
 	}
 
 }

@@ -18,6 +18,9 @@
 	</cache> -->
 	
 	   <cache-template name="heap-cache">
+	   <expiry>
+	   <ttl unit="seconds">120</ttl>
+	   </expiry>
 	     <resources>
             <heap unit="entries">90</heap>
             <offheap unit="MB">90</offheap>
