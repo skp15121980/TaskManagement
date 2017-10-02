@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.perf4j.StopWatch;
+import org.perf4j.aop.Profiled;
 import org.perf4j.log4j.Log4JStopWatch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,12 +36,12 @@ public class LTMRestController {
 
 	@Autowired
 	private TaskService taskService;
-
+@Profiled(tag ="LTMRestController.create" )
 	@RequestMapping(value = "/create", method = RequestMethod.POST)
 	public ResponseEntity<?> createTask(@RequestBody TaskDto taskDto) {
 		logger.info("Server Port value from Properties file=      " + accessPortFromProps);
 		logger.info("Spring.datasource value from Properties file= " + datasourceUrl);
-		  StopWatch stopWatch = new Log4JStopWatch("LTMRestController.create");
+		 // StopWatch stopWatch = new Log4JStopWatch("LTMRestController.create");
 		try {
 			// StopWatch watchJdbcTemplate = new StopWatch();
 			// watchJdbcTemplate.start();
@@ -49,7 +50,7 @@ public class LTMRestController {
 			// System.out.println("watchJdbcTemplate: " +
 			// watchJdbcTemplate.getTotalTimeMillis());
 			 logger.info("LTMRestController.create");
-		        stopWatch.stop();
+		       // stopWatch.stop();
 			return ResponseEntity.status(HttpStatus.CREATED).body(createdTask);
 		} catch (Exception e) {
 			logger.error("Something went wrong: ", e);

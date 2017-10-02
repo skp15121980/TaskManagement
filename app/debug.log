@@ -1,168 +1,50 @@
-2017-10-02 00:19:32.924 [main] INFO 
-				com.ltm.rnd.LTMRestControllerTests.logStarting - Starting LTMRestControllerTests on DESKTOP-TT2K11L with PID 1352 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:19:32.939 [main] DEBUG
-				com.ltm.rnd.LTMRestControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:19:32.939 [main] INFO 
-				com.ltm.rnd.LTMRestControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:19:36.425 [main] INFO 
-				com.ltm.rnd.LTMRestControllerTests.logStarted - Started LTMRestControllerTests in 3.939 seconds (JVM running for 5.052)
-2017-10-02 00:19:36.613 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:19:36.613 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:19:36.613 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:20:57.118 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarting - Starting LTMRestControllerTests on DESKTOP-TT2K11L with PID 14748 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:20:57.118 [main] DEBUG
+2017-10-02 21:46:13.460 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStarting - Starting LoanTaskManagerApplication on DESKTOP-TT2K11L with PID 11296 (D:\LoanTaskManager\LoanTaskManager\target\classes started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
+2017-10-02 21:46:13.462 [restartedMain] DEBUG
+				c.ltm.rnd.LoanTaskManagerApplication.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-02 21:46:13.462 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-10-02 21:47:54.723 [main] INFO 
+				c.l.r.c.LTMRestControllerTests.logStarting - Starting LTMRestControllerTests on DESKTOP-TT2K11L with PID 6436 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
+2017-10-02 21:47:54.723 [main] DEBUG
 				c.l.r.c.LTMRestControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:20:57.118 [main] INFO 
+2017-10-02 21:47:54.724 [main] INFO 
 				c.l.r.c.LTMRestControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:21:00.817 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarted - Started LTMRestControllerTests in 4.137 seconds (JVM running for 5.173)
-2017-10-02 00:21:01.067 [main] INFO 
+2017-10-02 21:47:58.805 [main] INFO 
+				c.l.r.c.LTMRestControllerTests.logStarted - Started LTMRestControllerTests in 4.452 seconds (JVM running for 7.008)
+2017-10-02 21:47:58.942 [main] INFO 
 				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:21:01.067 [main] INFO 
+2017-10-02 21:47:58.943 [main] INFO 
 				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:21:01.083 [main] INFO 
+2017-10-02 21:47:58.944 [main] INFO 
 				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:21:24.879 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 14520 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:21:24.879 [main] DEBUG
+2017-10-02 21:47:59.096 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 6436 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
+2017-10-02 21:47:59.097 [main] DEBUG
 				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:21:24.879 [main] INFO 
+2017-10-02 21:47:59.097 [main] INFO 
 				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:21:31.357 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 6.931 seconds (JVM running for 7.943)
-2017-10-02 00:21:31.576 [main] INFO 
+2017-10-02 21:48:04.586 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 5.561 seconds (JVM running for 12.788)
+2017-10-02 21:48:04.659 [main] INFO 
 				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:21:31.576 [main] INFO 
+2017-10-02 21:48:04.659 [main] INFO 
 				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:21:32.693 [main] INFO 
+2017-10-02 21:48:05.890 [main] INFO 
 				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:23:50.312 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarting - Starting LTMRestControllerTests on DESKTOP-TT2K11L with PID 15256 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:23:50.312 [main] DEBUG
-				c.l.r.c.LTMRestControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:23:50.312 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:23:53.996 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarted - Started LTMRestControllerTests in 4.091 seconds (JVM running for 5.187)
-2017-10-02 00:23:54.196 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:23:54.196 [main] INFO 
+2017-10-02 21:48:17.363 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStarting - Starting LoanTaskManagerApplication on DESKTOP-TT2K11L with PID 5948 (D:\LoanTaskManager\LoanTaskManager\target\classes started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
+2017-10-02 21:48:17.365 [restartedMain] DEBUG
+				c.ltm.rnd.LoanTaskManagerApplication.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-10-02 21:48:17.365 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-10-02 21:48:23.264 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.logStarted - Started LoanTaskManagerApplication in 6.088 seconds (JVM running for 6.679)
+2017-10-02 21:48:23.264 [restartedMain] INFO 
+				c.ltm.rnd.LoanTaskManagerApplication.main - main
+2017-10-02 21:48:59.947 [http-nio-8082-exec-1] INFO 
+				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      8082
+2017-10-02 21:48:59.948 [http-nio-8082-exec-1] INFO 
 				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:23:54.212 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:24:16.129 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarting - Starting LTMRestControllerTests on DESKTOP-TT2K11L with PID 14344 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:24:16.129 [main] DEBUG
-				c.l.r.c.LTMRestControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:24:16.145 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:24:21.032 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarted - Started LTMRestControllerTests in 5.519 seconds (JVM running for 7.547)
-2017-10-02 00:24:21.326 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:24:21.326 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:24:21.342 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:27:13.745 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 12560 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:27:13.745 [main] DEBUG
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:27:13.746 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:27:19.720 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 6.439 seconds (JVM running for 7.452)
-2017-10-02 00:27:19.908 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:27:19.908 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:27:22.513 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:27:22.669 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarting - Starting LTMRestControllerTests on DESKTOP-TT2K11L with PID 12560 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:27:22.669 [main] DEBUG
-				c.l.r.c.LTMRestControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:27:22.669 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:27:23.646 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarted - Started LTMRestControllerTests in 1.04 seconds (JVM running for 11.373)
-2017-10-02 00:27:23.662 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:27:23.662 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:27:23.677 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:27:45.600 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 14668 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:27:45.600 [main] DEBUG
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:27:45.616 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:27:51.742 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 6.539 seconds (JVM running for 7.424)
-2017-10-02 00:27:51.961 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:27:51.961 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:27:53.611 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:28:19.465 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 13568 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:28:19.465 [main] DEBUG
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:28:19.465 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:28:27.143 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 8.357 seconds (JVM running for 10.18)
-2017-10-02 00:28:27.419 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:28:27.419 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:28:28.882 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:29:15.203 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarting - Starting LTMRestControllerTests on DESKTOP-TT2K11L with PID 15316 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:29:15.204 [main] DEBUG
-				c.l.r.c.LTMRestControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:29:15.204 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:29:20.149 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarted - Started LTMRestControllerTests in 5.565 seconds (JVM running for 7.64)
-2017-10-02 00:29:20.449 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:29:20.449 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:29:20.449 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:39:29.308 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarting - Starting LTMRestControllerTests on DESKTOP-TT2K11L with PID 13528 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:39:29.308 [main] DEBUG
-				c.l.r.c.LTMRestControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:39:29.308 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:39:38.146 [main] INFO 
-				c.l.r.c.LTMRestControllerTests.logStarted - Started LTMRestControllerTests in 9.403 seconds (JVM running for 11.012)
-2017-10-02 00:39:39.225 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:39:39.225 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:39:39.225 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
-2017-10-02 00:39:39.366 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 13528 (started by Skpandey in D:\LoanTaskManager\LoanTaskManager)
-2017-10-02 00:39:39.366 [main] DEBUG
-				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
-2017-10-02 00:39:39.366 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
-2017-10-02 00:39:43.691 [main] INFO 
-				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 4.388 seconds (JVM running for 16.561)
-2017-10-02 00:39:43.722 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Server Port value from Properties file=      -1
-2017-10-02 00:39:43.722 [main] INFO 
-				c.l.rnd.controller.LTMRestController.createTask - Spring.datasource value from Properties file= jdbc:oracle:thin:@//localhost:1521/xe
-2017-10-02 00:39:47.142 [main] INFO 
+2017-10-02 21:49:00.731 [http-nio-8082-exec-1] INFO 
 				c.l.rnd.controller.LTMRestController.createTask - LTMRestController.create
