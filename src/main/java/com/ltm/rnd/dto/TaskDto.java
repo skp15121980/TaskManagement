@@ -7,6 +7,10 @@ import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * @author Skpandey
+ *
+ */
 public class TaskDto implements Serializable{
 
 	/**

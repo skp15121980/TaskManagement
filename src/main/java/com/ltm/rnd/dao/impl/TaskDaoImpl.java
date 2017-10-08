@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.UUID;
 
 import org.perf4j.StopWatch;
+import org.perf4j.aop.Profiled;
 import org.perf4j.log4j.Log4JStopWatch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -24,11 +25,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ltm.rnd.dao.TaskDao;
 import com.ltm.rnd.dto.TaskDto;
 
+/**
+ * @author Skpandey
+ *
+ */
 @Repository
 public class TaskDaoImpl implements TaskDao {
 	ObjectMapper objectMapper = new ObjectMapper();
 	@Autowired
 	JdbcTemplate jdbcTemplate;
+	@Profiled(tag="TaskDaoImpl.create")
 	@Override
 	public TaskDto create(TaskDto taskDto) {
 		 StopWatch stopWatch = new Log4JStopWatch("TaskDaoImpl.create");

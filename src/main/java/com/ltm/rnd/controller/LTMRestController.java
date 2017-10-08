@@ -36,21 +36,14 @@ public class LTMRestController {
 
 	@Autowired
 	private TaskService taskService;
-@Profiled(tag ="LTMRestController.create" )
+	@Profiled(tag ="LTMRestController.create" )
 	@RequestMapping(value = "/create", method = RequestMethod.POST)
 	public ResponseEntity<?> createTask(@RequestBody TaskDto taskDto) {
 		logger.info("Server Port value from Properties file=      " + accessPortFromProps);
 		logger.info("Spring.datasource value from Properties file= " + datasourceUrl);
-		 // StopWatch stopWatch = new Log4JStopWatch("LTMRestController.create");
 		try {
-			// StopWatch watchJdbcTemplate = new StopWatch();
-			// watchJdbcTemplate.start();
 			TaskDto createdTask = taskService.create(taskDto);
-			// watchJdbcTemplate.stop();
-			// System.out.println("watchJdbcTemplate: " +
-			// watchJdbcTemplate.getTotalTimeMillis());
-			 logger.info("LTMRestController.create");
-		       // stopWatch.stop();
+			logger.info("LTMRestController.create");
 			return ResponseEntity.status(HttpStatus.CREATED).body(createdTask);
 		} catch (Exception e) {
 			logger.error("Something went wrong: ", e);
@@ -58,21 +51,16 @@ public class LTMRestController {
 
 		}
 	}
-	
+
 	@RequestMapping(value = "/getTaskType", method = RequestMethod.GET)
 	public ResponseEntity<?> getTaskByUserId(@RequestParam String userId) {
 		logger.info("Server Port value from Properties file=      " + accessPortFromProps);
 		logger.info("Spring.datasource value from Properties file= " + datasourceUrl);
-		  StopWatch stopWatch = new Log4JStopWatch("LTMRestController.getTaskByUserId");
+		StopWatch stopWatch = new Log4JStopWatch("LTMRestController.getTaskByUserId");
 		try {
-			// StopWatch watchJdbcTemplate = new StopWatch();
-			// watchJdbcTemplate.start();
 			List<String> taskTypeList = taskService.getByUserId(userId);
-			// watchJdbcTemplate.stop();
-			// System.out.println("watchJdbcTemplate: " +
-			// watchJdbcTemplate.getTotalTimeMillis());
-			 logger.info("LTMRestController.getTaskByUserId");
-		        stopWatch.stop();
+			logger.info("LTMRestController.getTaskByUserId");
+			stopWatch.stop();
 			return ResponseEntity.status(HttpStatus.OK).body(taskTypeList);
 		} catch (Exception e) {
 			logger.error("Something went wrong: ", e);

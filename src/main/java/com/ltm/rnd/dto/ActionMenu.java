@@ -4,6 +4,10 @@ import java.io.Serializable;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * @author Skpandey
+ *
+ */
 public class ActionMenu implements Serializable {
 
 	/**

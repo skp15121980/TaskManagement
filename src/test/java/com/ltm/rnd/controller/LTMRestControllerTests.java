@@ -11,13 +11,10 @@ import java.util.UUID;
 import javax.inject.Inject;
 
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -27,34 +24,33 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.ltm.rnd.controller.LTMRestController;
-import com.ltm.rnd.dao.TaskDao;
 import com.ltm.rnd.dto.ActionMenu;
 import com.ltm.rnd.dto.TaskDto;
 import com.ltm.rnd.dto.TaskStatus;
 import com.ltm.rnd.service.TaskService;
 
+/**
+ * @author Skpandey
+ *
+ */
 @RunWith(SpringRunner.class)
 @AutoConfigureMockMvc
 @WebMvcTest(LTMRestController.class)
 public class LTMRestControllerTests {
 
-	 @Inject
-	    private MockMvc mockMvc;
-	    
-	    @Inject
-	    private WebApplicationContext context;
-	    
-	    @MockBean
-	    private TaskService taskService;
-	    
-	    @Before
-	    public void setup() {
-	        mockMvc = MockMvcBuilders.webAppContextSetup(context)
-	                .defaultRequest(get("/")).build();
-	    }
+	@Inject
+	private MockMvc mockMvc;
 
-	String ltmTaskJson = "{\"taskId\":\"ef089fae-4df4-4ac8-8fae-b6eed732ce02\",\"taskType\":\"LTM\",\"taskStatus\":\"NEW\"}";
+	@Inject
+	private WebApplicationContext context;
+
+	@MockBean
+	private TaskService taskService;
+
+	@Before
+	public void setup() {
+		mockMvc = MockMvcBuilders.webAppContextSetup(context).defaultRequest(get("/")).build();
+	}
 
 	@Test
 	public void createTask() throws Exception {
