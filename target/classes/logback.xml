@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration  debug="true">
+
+<property resource="application.yml" />
+	<property name="DEV_HOME" value="app" />
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{ yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+<appender name="FILE-AUDIT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${DEV_HOME}/debug.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern> %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+				%logger{36}.%M - %msg%n</Pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${DEV_HOME}/debug.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>10</maxHistory>
+			<totalSizeCap>10MB</totalSizeCap>
+		</rollingPolicy>
+	</appender>
+<!-- <appender name="FILE-ERROR"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${DEV_HOME}/error.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern> %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+				%logger{36}.%M - %msg%n</Pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${DEV_HOME}/archived/error.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>10</maxHistory>
+			<totalSizeCap>10MB</totalSizeCap>
+		</rollingPolicy>
+	</appender> -->
+	<appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <FileNamePattern>${DEV_HOME}/myapp.log.%d{yyyy-MM-dd}</FileNamePattern>
+    </rollingPolicy>
+    <encoder>
+        <pattern>%d %5p | %t | %-55logger{55} | %m %n</pattern>
+    </encoder>
+</appender> 
+	<appender name="perf4jFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <FileNamePattern>${DEV_HOME}/perform4j.%d{yyyy-MM-dd}</FileNamePattern>
+    </rollingPolicy>
+    <encoder>
+        <Pattern>%date %-5level [%thread] %logger{36} [%file:%line] %msg%n</Pattern>
+    </encoder>
+</appender>
+
+
+  <appender name="statistics" class="ch.qos.logback.core.FileAppender">
+    <file>${DEV_HOME}/statisticsLogback.log</file>
+    <append>false</append>
+    <layout>
+      <pattern>%msg%n</pattern>
+    </layout>
+  </appender>
+  
+  <appender name="coalescingStatistics" class="org.perf4j.logback.AsyncCoalescingStatisticsAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <timeSlice>1000</timeSlice>
+	<appender-ref ref="statistics"/>
+  </appender>
+  
+<logger name="org.perf4j.TimingLogger" level="info" additivity="false">
+<appender-ref ref="coalescingStatistics" />
+   
+</logger>
+<logger name="com.ltm.rnd" additivity="false" level="debug">
+		<appender-ref ref="FILE-AUDIT" />
+		<!-- <appender-ref ref="STDOUT"/> -->
+	</logger>
+    <root level="INFO">
+     <appender-ref ref="perf4jFileAppender" />
+    	 <appender-ref ref="file" /> 
+        <appender-ref ref="STDOUT" />
+       <!--  <appender-ref ref="FILE-ERROR" /> -->
+      
+    </root>
+</configuration>
