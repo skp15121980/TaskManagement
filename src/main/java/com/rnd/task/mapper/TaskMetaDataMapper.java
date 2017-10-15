@@ -17,6 +17,11 @@ public class TaskMetaDataMapper {
 		metadataList.forEach(entity -> {
 			LtmAttributeDto dto = new LtmAttributeDto();
 			dto.setId(entity.getId());
+			dto.setKey(entity.getKey());
+			dto.setField(entity.getField());
+			dto.setType(entity.getType());
+			dto.setLabel(entity.getLabel());
+			dto.setDataType(entity.getDataType());
 			attributesDto.add(dto);
 		});
 		return attributesDto;

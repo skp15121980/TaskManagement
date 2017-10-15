@@ -5,7 +5,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import javax.inject.Inject;
@@ -15,6 +17,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -24,6 +27,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.rnd.task.LoanTaskManagerApplication;
 import com.rnd.task.controller.TaskController;
 import com.rnd.task.dto.ActionMenuDto;
 import com.rnd.task.dto.TaskDto;
@@ -34,9 +38,10 @@ import com.rnd.task.service.TaskService;
  * @author Skpandey
  *
  */
+
 @RunWith(SpringRunner.class)
+@SpringBootTest(classes = TaskController.class)
 @AutoConfigureMockMvc
-@WebMvcTest(TaskController.class)
 public class TaskControllerTests {
 
 	@Inject
@@ -58,16 +63,20 @@ public class TaskControllerTests {
 		ObjectMapper mapper = new ObjectMapper();
 		TaskDto taskDto = new TaskDto();
 		taskDto.setTaskId(UUID.randomUUID());
-		taskDto.setTaskType("Test");
+		taskDto.setTaskType("LTM");
 		taskDto.setTaskStatus(TaskStatus.OPEN);
 		taskDto.setCreatedTimestamp(new java.sql.Timestamp(Calendar.getInstance().getTimeInMillis()));
 		taskDto.setCreatedUserId("Sunil");
 		List<ActionMenuDto> actionMenu = new ArrayList<ActionMenuDto>();
 		ActionMenuDto actionMenuDto = new ActionMenuDto();
 		actionMenuDto.setLeftClick("LeftClick");
-		actionMenuDto.setLeftClick("RightClick");
+		actionMenuDto.setRightClick("RightClick");
 		actionMenu.add(actionMenuDto);
 		taskDto.setActionMenu(actionMenu);
+		Map<String ,Object > bussinessAttributes= new HashMap<>();
+		bussinessAttributes.put("lob", "lob");
+		bussinessAttributes.put("collateral", "collateral");
+		taskDto.setBussinessAttributes(bussinessAttributes);
 		String jsonInString = mapper.writeValueAsString(taskDto);
 		mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/tasks/create").contentType(MediaType.APPLICATION_JSON).content(jsonInString)).andExpect(status().isCreated());
 

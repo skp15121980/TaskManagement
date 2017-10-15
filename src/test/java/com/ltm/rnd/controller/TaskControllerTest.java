@@ -4,7 +4,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import org.junit.Test;
@@ -43,16 +45,20 @@ public class TaskControllerTest {
 		ObjectMapper mapper = new ObjectMapper();
 		TaskDto taskDto = new TaskDto();
 		taskDto.setTaskId(UUID.randomUUID());
-		taskDto.setTaskType("Test");
+		taskDto.setTaskType("LTM");
 		taskDto.setTaskStatus(TaskStatus.OPEN);
 		taskDto.setCreatedTimestamp(new java.sql.Timestamp(Calendar.getInstance().getTimeInMillis()));
 		taskDto.setCreatedUserId("Sunil");
 		List<ActionMenuDto> actionMenu = new ArrayList<ActionMenuDto>();
 		ActionMenuDto actionMenuDto = new ActionMenuDto();
 		actionMenuDto.setLeftClick("LeftClick");
-		actionMenuDto.setLeftClick("RightClick");
+		actionMenuDto.setRightClick("RightClick");
 		actionMenu.add(actionMenuDto);
 		taskDto.setActionMenu(actionMenu);
+		Map<String ,Object > bussinessAttributes= new HashMap<>();
+		bussinessAttributes.put("lob", "lob");
+		bussinessAttributes.put("collateral", "collateral");
+		taskDto.setBussinessAttributes(bussinessAttributes);
 		String jsonInString = mapper.writeValueAsString(taskDto);
 		mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/tasks/create").contentType(MediaType.APPLICATION_JSON).content(jsonInString)).andExpect(status().isCreated());
 

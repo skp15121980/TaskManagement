@@ -32,7 +32,12 @@ public class TaskMetaDataDaoImpl implements TaskMetaDataDao {
 		@Override
 		public LTMAttributeEntity mapRow(ResultSet rs, int rowNum) throws SQLException {
 			LTMAttributeEntity entity = new LTMAttributeEntity();
-			entity.setId(rs.getInt("ID"));
+			entity.setId(rs.getInt("ID")); 
+			entity.setKey(rs.getString("UI_KEY"));
+			entity.setType(rs.getInt("ATTRIBUTE_TYPE"));
+			entity.setField(rs.getString("DB_COLUMN"));
+			entity.setLabel(rs.getString("UI_LABEL"));
+			entity.setDataType(rs.getString("DATA_TYPE"));
 			return entity;
 		}
 	}

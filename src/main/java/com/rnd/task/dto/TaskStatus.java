@@ -1,6 +1,7 @@
 package com.rnd.task.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum TaskStatus {
 	OPEN(1),LOCKED(2),CLOSE(3);
@@ -21,8 +22,10 @@ public enum TaskStatus {
 	   }
 	   return null;
    }
+   @JsonValue
    public int getNumericValue() {
 	   return key;
    }
+   
 }
 

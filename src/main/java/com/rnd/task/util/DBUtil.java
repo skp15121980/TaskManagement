@@ -34,7 +34,7 @@ public class DBUtil {
 
 	public static Map<String, Object> buildDynamicFields(TaskDto taskDto,Map<String, LtmAttributeDto> businessAttributesMetada) {
 		Map<String, Object> businessAttributesMap = taskDto.getBussinessAttributes();
-		return null;
+		return businessAttributesMap;
 	}
 
 	public static Integer getSqType(String dataType) {

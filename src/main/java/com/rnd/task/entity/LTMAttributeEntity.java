@@ -13,7 +13,9 @@ public class LTMAttributeEntity {
 	String field;
 	
 	String label;
-
+	
+	String dataType;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -53,6 +55,13 @@ public class LTMAttributeEntity {
 	public void setLabel(String label) {
 		this.label = label;
 	}
-	
+
+	public String getDataType() {
+		return dataType;
+	}
+
+	public void setDataType(String dataType) {
+		this.dataType = dataType;
+	}
 	
 }
