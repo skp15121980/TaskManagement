@@ -40,6 +40,19 @@ public class TaskDto implements Serializable{
 	@JsonProperty("bussinessAttributes")
 	private Map<String ,Object > bussinessAttributes;
 	
+	
+	public TaskDto(UUID taskId, String taskType, TaskStatus taskStatus, Date createdTimestamp, String createdUserId,
+			List<ActionMenuDto> actionMenu, Map<String, Object> bussinessAttributes) {
+		super();
+		this.taskId = taskId;
+		this.taskType = taskType;
+		this.taskStatus = taskStatus;
+		this.createdTimestamp = createdTimestamp;
+		this.createdUserId = createdUserId;
+		this.actionMenu = actionMenu;
+		this.bussinessAttributes = bussinessAttributes;
+	}
+
 	public TaskDto() {
 	}
 
