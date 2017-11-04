@@ -1,0 +1,48 @@
+2017-11-05 01:07:22.737 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStarting - Starting TaskControllerTests on DESKTOP-TT2K11L with PID 344 (started by Skpandey in D:\SpringBootAndSonarQube\TaskManagement)
+2017-11-05 01:07:22.741 [main] DEBUG
+				c.l.r.controller.TaskControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-11-05 01:07:22.741 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-11-05 01:07:24.083 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStarted - Started TaskControllerTests in 1.859 seconds (JVM running for 3.553)
+2017-11-05 01:07:24.408 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 344 (started by Skpandey in D:\SpringBootAndSonarQube\TaskManagement)
+2017-11-05 01:07:24.417 [main] DEBUG
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-11-05 01:07:24.417 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-11-05 01:07:30.727 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 6.369 seconds (JVM running for 10.197)
+2017-11-05 01:11:07.039 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStarting - Starting TaskControllerTests on DESKTOP-TT2K11L with PID 3692 (started by Skpandey in D:\SpringBootAndSonarQube\TaskManagement)
+2017-11-05 01:11:07.040 [main] DEBUG
+				c.l.r.controller.TaskControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-11-05 01:11:07.040 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-11-05 01:11:08.151 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStarted - Started TaskControllerTests in 1.442 seconds (JVM running for 2.716)
+2017-11-05 01:11:08.459 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 3692 (started by Skpandey in D:\SpringBootAndSonarQube\TaskManagement)
+2017-11-05 01:11:08.459 [main] DEBUG
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-11-05 01:11:08.459 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-11-05 01:11:14.224 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 5.813 seconds (JVM running for 8.79)
+2017-11-05 01:12:06.208 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStarting - Starting TaskControllerTests on DESKTOP-TT2K11L with PID 9164 (started by Skpandey in D:\SpringBootAndSonarQube\TaskManagement)
+2017-11-05 01:12:06.209 [main] DEBUG
+				c.l.r.controller.TaskControllerTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-11-05 01:12:06.209 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-11-05 01:12:07.391 [main] INFO 
+				c.l.r.controller.TaskControllerTests.logStarted - Started TaskControllerTests in 1.542 seconds (JVM running for 2.607)
+2017-11-05 01:12:07.724 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Starting LoanTaskManagerApplicationTests on DESKTOP-TT2K11L with PID 9164 (started by Skpandey in D:\SpringBootAndSonarQube\TaskManagement)
+2017-11-05 01:12:07.725 [main] DEBUG
+				c.l.r.LoanTaskManagerApplicationTests.logStarting - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-11-05 01:12:07.725 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2017-11-05 01:12:13.675 [main] INFO 
+				c.l.r.LoanTaskManagerApplicationTests.logStarted - Started LoanTaskManagerApplicationTests in 6.011 seconds (JVM running for 8.89)
